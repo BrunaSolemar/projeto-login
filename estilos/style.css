@@ -28,7 +28,7 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow:hidden; /*para deixar a imagem que eu coloquei com as bordas arredondadas*/
 
     background-color: white;
@@ -40,6 +40,7 @@ section#login{
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem{
@@ -93,7 +94,7 @@ div.campo > input{
     border-radius: 8px;
     padding: 4px;
     width: calc(100% - 45px); /*essa função fez com que um retanguelo se encaixasse no outro em email e senha*/
-    transform: translateY(-12px);
+    transform: translateY(-12px); /*fazer como ultima linha qnd tiver animação*/
 }
 
 div.campo > input:focus-within{ /*a caixa onde ta digitando ficou branca*/
