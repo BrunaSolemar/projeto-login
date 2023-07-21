@@ -33,7 +33,7 @@ section#login{
 
     background-color: white;
     width: 280px;
-    height: 550px;
+    height: 540px;
     border-radius: 20px;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
@@ -66,15 +66,39 @@ div#formulario > p{
 
 form > div.campo{
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label{
     display: none;
+}
+
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color:#50aeab;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px); /*essa função fez com que um retanguelo se encaixasse no outro em email e senha*/
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within{ /*a caixa onde ta digitando ficou branca*/
+    background-color: white;
+
 }
 
 form > input[type=submit] {
@@ -92,6 +116,7 @@ form > input[type=submit] {
 
 form > input[type=submit]:hover{
     background-color: #337270;
+    
 }
 
 form > a.botao{
